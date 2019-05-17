@@ -1,6 +1,6 @@
-package dao;
+package com.learnfw4j.dao;
 
-import entities.StudentInfo;
+import com.learnfw4j.domain.StudentInfo;
 
 import java.util.List;
 

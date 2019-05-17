@@ -1,4 +1,4 @@
-package entities;
+package com.learnfw4j.domain;
 
 public class StudentInfo {
     private String studentId;
