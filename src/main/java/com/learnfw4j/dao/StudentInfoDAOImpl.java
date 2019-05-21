@@ -1,7 +1,11 @@
 package com.learnfw4j.dao;
 
+import com.datasource.DatabaseUtil;
 import com.learnfw4j.domain.StudentInfo;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
 
 public class StudentInfoDAOImpl implements StudentInfoDAO {
@@ -10,6 +14,14 @@ public class StudentInfoDAOImpl implements StudentInfoDAO {
     }
 
     public StudentInfo insertStudentInfo(StudentInfo studentInfo) {
+        try {
+            Connection connection = DatabaseUtil.getConnection();
+            String sql = "";
+            Statement statement = connection.createStatement();
+            statement.execute(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 
