@@ -73,4 +73,18 @@ public class StudentInfo {
     public void setEnglish(float english) {
         this.english = english;
     }
+
+    @Override
+    public String toString() {
+        return "StudentInfo{" +
+                "studentId='" + studentId + '\'' +
+                ", name='" + name + '\'' +
+                ", grade=" + grade +
+                ", clazz=" + clazz +
+                ", java=" + java +
+                ", chinese=" + chinese +
+                ", math=" + math +
+                ", english=" + english +
+                '}';
+    }
 }
